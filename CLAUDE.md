@@ -1,8 +1,8 @@
-# Nearish — Development Guide
+# PopIn — Development Guide
 
 ## What This App Is
 
-Nearish is a real-time, location-based iOS/Android app that lets people signal they're open to a spontaneous, platonic conversation in public spaces — coffee shops, coworking spaces, campus dining halls, etc. The core mechanic: set your status to "open to chat," others nearby see a count of people open, tap in to see limited identity info, and send a Match request. The person who is open accepts or quietly ignores it. No rejection, no awkwardness, no dating.
+PopIn is a real-time, location-based iOS/Android app that lets people signal they're open to a spontaneous, platonic conversation in public spaces — coffee shops, coworking spaces, campus dining halls, etc. The core mechanic: set your status to "open to chat," others nearby see a count of people open, tap in to see limited identity info, and send a Match request. The person who is open accepts or quietly ignores it. No rejection, no awkwardness, no dating.
 
 ---
 
@@ -27,7 +27,7 @@ Nearish is a real-time, location-based iOS/Android app that lets people signal t
 ## Folder Structure
 
 ```
-nearish/
+popin/
 ├── app/                    # Expo Router screens
 │   ├── (auth)/             # Onboarding, verification
 │   ├── (tabs)/             # Main app tabs
@@ -196,6 +196,6 @@ Custom tags are sent to OpenAI Moderation API before being saved. Flagged tags a
 
 - Test core location and session features using **Expo Go** on a physical device
 - Stripe Identity and push notifications require an **EAS build** or local native build — mock these in development
-- Session notes for each build sprint live in `.claude/session-notes.md`
+- Session notes for each build sprint live in `notes/session-notes.md`
 - Monitor bundle size periodically with `npx expo export --source-map`
 - Never test with real user data in development — use seeded test accounts
