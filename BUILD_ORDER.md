@@ -1,4 +1,4 @@
-# PopIn — Build Order
+# Pop-In — Build Order
 
 Each phase should be fully working and tested on a physical device before moving to the next. Phases 0–5 are the MVP. Everything after is layering on top of a working foundation.
 

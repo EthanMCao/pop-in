@@ -1,4 +1,4 @@
-# PopIn
+# Pop-In
 ### Meet People. Right Now. Right Here.
 *App Concept Document — v0.6*
 
@@ -6,9 +6,9 @@
 
 ## Overview
 
-PopIn is a real-time, location-based app that lets people signal they're open to a conversation in person — without the awkwardness of approaching a stranger cold. The core mechanic is simple: you set your status to "open to chat" at your current venue, and anyone else nearby with the app can see that someone is approachable. No cold approaching, no awkward interruptions, no guessing whether someone wants to be bothered.
+Pop-In is a real-time, location-based app that lets people signal they're open to a conversation in person — without the awkwardness of approaching a stranger cold. The core mechanic is simple: you set your status to "open to chat" at your current venue, and anyone else nearby with the app can see that someone is approachable. No cold approaching, no awkward interruptions, no guessing whether someone wants to be bothered.
 
-PopIn is strictly platonic. It is not a dating app. The goal is low-stakes small talk and human connection — a stranger to grab coffee with, someone to share a table with, a quick conversation that makes the afternoon less solitary.
+Pop-In is strictly platonic. It is not a dating app. The goal is low-stakes small talk and human connection — a stranger to grab coffee with, someone to share a table with, a quick conversation that makes the afternoon less solitary.
 
 ---
 
@@ -22,10 +22,10 @@ Existing solutions either require pre-planning (Timeleft, Meetup) or are built a
 
 ## The Solution
 
-PopIn works in three steps:
+Pop-In works in three steps:
 
 1. You arrive somewhere — a coffee shop, coworking space, campus dining hall, park, or any public venue.
-2. You open PopIn, enable location, and set your status to **"Open to chat."** The app detects your venue and adds you to that location's active session. You set how long you want to be open (30, 60, 90, 120 min, etc.) and choose a vibe tag for the session. The app runs quietly in the background.
+2. You open Pop-In, enable location, and set your status to **"Open to chat."** The app detects your venue and adds you to that location's active session. You set how long you want to be open (30, 60, 90, 120 min, etc.) and choose a vibe tag for the session. The app runs quietly in the background.
 3. Anyone else at the same venue with the app sees how many people are open there (e.g. "2 people open here"). They can tap in to see a first name, gender, approximate age, and vibe tag for each person, then send a Match — a soft signal of interest. The person who is open gets a quiet notification and can accept or quietly ignore it.
 
 The key insight: you already know someone wants to talk *before* you walk over. That changes everything. The fear of rejection is gone because the person in front of you already said yes.
@@ -49,7 +49,7 @@ The key insight: you already know someone wants to talk *before* you walk over. 
 
 ## Identity & Privacy
 
-PopIn intentionally keeps identity minimal. This is not a dating app — you don't need to know much about someone before deciding to have a conversation with them. The tiered reveal below is designed to give just enough context to feel comfortable, nothing more.
+Pop-In intentionally keeps identity minimal. This is not a dating app — you don't need to know much about someone before deciding to have a conversation with them. The tiered reveal below is designed to give just enough context to feel comfortable, nothing more.
 
 - **Before tapping in:** Person B sees only a count — "2 people open here." No names, no identities.
 - **After tapping in:** Person B sees each open person's first name, last initial, gender, vibe tag, and optionally an approximate age range (e.g. "mid 20s"). Age display is entirely optional — users choose whether to show it and it's never shown as an exact number.
@@ -60,17 +60,17 @@ PopIn intentionally keeps identity minimal. This is not a dating app — you don
 
 ## Connections & Messaging
 
-PopIn is built around real interactions, not digital ones. There are no public profiles, no follower counts, no way to search for or add people you know. You cannot find someone on PopIn unless you've physically met them through the app.
+Pop-In is built around real interactions, not digital ones. There are no public profiles, no follower counts, no way to search for or add people you know. You cannot find someone on Pop-In unless you've physically met them through the app.
 
-The only persistent social layer is a **"People You've Met"** section — a private list of everyone you've connected with in person through PopIn. From this list you can send a lightweight follow-up message if you forgot to ask something or want to say it was good to meet them. If an interaction went badly, you can quietly remove someone — since there's no search functionality, removing them effectively erases any record of them from your experience entirely.
+The only persistent social layer is a **"People You've Met"** section — a private list of everyone you've connected with in person through Pop-In. From this list you can send a lightweight follow-up message if you forgot to ask something or want to say it was good to meet them. If an interaction went badly, you can quietly remove someone — since there's no search functionality, removing them effectively erases any record of them from your experience entirely.
 
-The long-term vision is for PopIn to evolve into a broader platform centered entirely on real-world interaction — but that is a future consideration, not something being built now.
+The long-term vision is for Pop-In to evolve into a broader platform centered entirely on real-world interaction — but that is a future consideration, not something being built now.
 
 ---
 
 ## Target Audience
 
-PopIn is designed for anyone who finds themselves alone in a public space and is open to human connection. Primary early adopters are likely:
+Pop-In is designed for anyone who finds themselves alone in a public space and is open to human connection. Primary early adopters are likely:
 
 - College students eating alone on campus or at nearby spots
 - Young professionals working remotely from cafés
@@ -92,7 +92,7 @@ PopIn is designed for anyone who finds themselves alone in a public space and is
 
 ## Why This Is Different
 
-| Feature | PopIn | Timeleft | Tinder | Meetup |
+| Feature | Pop-In | Timeleft | Tinder | Meetup |
 |---|:---:|:---:|:---:|:---:|
 | No pre-planning needed | ✓ | ✗ | ✓ | ✗ |
 | Rejection-free mechanic | ✓ | ✗ | ✓ | ✗ |
@@ -118,7 +118,7 @@ Once a Match is accepted, the app steps back. A lightweight chat opens between t
 
 - **Minimum age:** 18. Hard requirement. The app is for adults only.
 - **Age verification:** Phone number verification is required on signup. A lightweight ID check (via a third-party service like Stripe Identity or Veriff) confirms users are 18+ before they can go active. Selfie verification matches the user to their ID. These are consistent with the direction dating apps are moving under increasing legal pressure and are worth the onboarding friction to keep bad actors out.
-- **Catfishing:** Because PopIn is built around in-person meeting, identity fraud is naturally self-correcting — you can't sustain a fake persona when you're sitting across from someone within minutes. Community reporting handles edge cases.
+- **Catfishing:** Because Pop-In is built around in-person meeting, identity fraud is naturally self-correcting — you can't sustain a fake persona when you're sitting across from someone within minutes. Community reporting handles edge cases.
 - **Notifications:** Match alerts use a standard quiet notification — no sounds or interruptions that would draw attention in a public space.
 
 ---
@@ -150,7 +150,7 @@ When someone opens the app at a venue with no one currently open, they see a sim
 
 ## Technology Stack
 
-PopIn is being built solo using a vibe-coding approach. The stack is chosen to be lean, well-documented, and easy to iterate on — covering everything the app needs without unnecessary complexity.
+Pop-In is being built solo using a vibe-coding approach. The stack is chosen to be lean, well-documented, and easy to iterate on — covering everything the app needs without unnecessary complexity.
 
 **Platform**
 - iOS first, with Android supported simultaneously via a shared codebase
@@ -189,4 +189,4 @@ This is v0.7 of the concept document. Nothing has been built yet. The purpose of
 
 ---
 
-*PopIn — Concept Document v0.7*
+*Pop-In — Concept Document v0.7*

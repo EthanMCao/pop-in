@@ -1,8 +1,8 @@
-# PopIn — Development Guide
+# Pop-In — Development Guide
 
 ## What This App Is
 
-PopIn is a real-time, location-based iOS/Android app that lets people signal they're open to a spontaneous, platonic conversation in public spaces — coffee shops, coworking spaces, campus dining halls, etc. The core mechanic: set your status to "open to chat," others nearby see a count of people open, tap in to see limited identity info, and send a Match request. The person who is open accepts or quietly ignores it. No rejection, no awkwardness, no dating.
+Pop-In is a real-time, location-based iOS/Android app that lets people signal they're open to a spontaneous, platonic conversation in public spaces — coffee shops, coworking spaces, campus dining halls, etc. The core mechanic: set your status to "open to chat," others nearby see a count of people open, tap in to see limited identity info, and send a Match request. The person who is open accepts or quietly ignores it. No rejection, no awkwardness, no dating.
 
 ---
 
@@ -27,7 +27,7 @@ PopIn is a real-time, location-based iOS/Android app that lets people signal the
 ## Folder Structure
 
 ```
-popin/
+pop-in/
 ├── app/                    # Expo Router screens
 │   ├── (auth)/             # Onboarding, verification
 │   ├── (tabs)/             # Main app tabs
